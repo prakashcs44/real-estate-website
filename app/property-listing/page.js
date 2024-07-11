@@ -46,7 +46,7 @@ function page() {
               } ${
                 section === index && "bg-slate-100"
               } py-4 px-10 cursor-pointer`}
-              onClick={() => setSection(index)}
+            
             >
               {form.name}
             </li>
@@ -54,8 +54,8 @@ function page() {
         </ul>
       </header>
 
-      <div className="h-96 overflow-x-hidden overflow-y-auto">
-        {<CurrentForm />}
+      <div >
+        {<CurrentForm onSubmit = {()=>setSection(prev=>prev===FORM_SECTIONS.length-1?prev:prev+1)} />}
       </div>
     </div>
   );

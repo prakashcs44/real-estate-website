@@ -26,6 +26,7 @@ export const useForm = (initialValues, validator) => {
 
   const handleSubmit = (onSubmit) => {
     return (e) => {
+      console.log("i am form")
       e.preventDefault();
       const validationErrors = validator(formData);
       if (Object.keys(validationErrors).length === 0) {
