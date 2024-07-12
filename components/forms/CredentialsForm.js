@@ -9,7 +9,7 @@ const CredentialsForm = ({onSubmit}) => {
     const { handleInputChange, formData,handleSubmit,errors } = useForm({
       iam: "",
       name: "",
-      country: "",
+      country: "India",
       phoneNo: "",
       countryCode: "",
       email: "",

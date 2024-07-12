@@ -20,7 +20,7 @@ const NAV_ITEMS = [
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 right-0 flex justify-between px-10 pt-4 pb-4 bg-[#F6EFE6] h-20 box-border">
+    <header className="sticky top-0 left-0 right-0 flex justify-between px-10 pt-4 pb-4 bg-[#F6EFE6] h-20 box-border">
       <div>
         <svg
           width="117"
